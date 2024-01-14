@@ -9,7 +9,7 @@ We want to measure temperature, pressure and luminosity from the sensors.
 
 Sensors:  
 1. Temperature Sensor (LPS331AP): It measures temperature in Celcius
-2.  Pressure Sensor (LPS331AP): Is measures atmospheric pressure in hPa.
+2.  Pressure Sensor (LPS331AP): It measures atmospheric pressure in hPa.
 3.  Luminosity (Light) Sensor (ISL29020): It measures ambient light intensity in lux.
 
 IOT_LAB M3 board contains all these sensors. 
