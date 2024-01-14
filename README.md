@@ -1,7 +1,7 @@
 # IoT_Mini_Project_1 
  **Group-5: Md Mia, Md Esti, Abdullah Chaudhry**
 
-
+Github: https://github.com/abmtarun/riot_project.git
 
 ##  Introduction ##
 
@@ -81,7 +81,7 @@ make IOTLAB_NODE=auto flash
 To see the results, go to the "My experiments" section on Iot-LAB.
 You will get the following result:
 
-
+![Image1](/Sensors/Sensor_Data.PNG)
 
 
 
@@ -123,6 +123,11 @@ Get the experiment nodes list:
 ```
 iotlab-experiment --jmespath="items[*].network_address | sort(@)" get --nodes
 ```
+
+You can see the Output
+
+![Image2](/Coap/Coap-1.PNG)
+![Image3](/Coap/Coap-2.PNG)
 
 In the first terminal, which we will now call the coap server, you can type the following command: 
 ```
