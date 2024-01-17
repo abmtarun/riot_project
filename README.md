@@ -207,6 +207,17 @@ Remember to replace ```<ipv6>``` by the IP V6 adress of the server.
 Now you can see the temperature properly. That means, the two servers are communicating properly. 
 
 
+## Benefits
+
+-   *Enhanced Security*: WareSage's sensor-driven security measures protect valuable assets.
+-   *Energy Efficiency:* Automated climate control and lighting contribute to reduced energy consumption.
+-   *Real-time Insights:* The system provides real-time data for informed decision-making.
+-   *Scalability:* Docker and Kubernetes can be encorporated to ensure scalability to accommodate growing demands.
+-   *Operational Efficiency:* Automation streamlines warehouse operations, reducing manual intervention.
+
+## Conclusion ##
+
+In conclusion, WareSage is a game-changing solution for warehouse management. It leverages IoT sensors, Docker containerization, and Kubernetes orchestration to create a smart warehouse system that optimizes operations, enhances security, and ensures the safety and security of valuable goods during transportation and storage. WareSage represents a significant step toward modernizing and optimizing warehouse logistics.
 
 
 ## Demonstration video ##
