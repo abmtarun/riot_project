@@ -1,9 +1,41 @@
 # IoT_Mini_Project_1 
  **Group-5: Md Mia, Md Esti, Abdullah Chaudhry**
+ **"WareSage: The Smart IoT Logistics Nexus"**
 
 Github: https://github.com/abmtarun/riot_project.git
 
 ##  Introduction ##
+"WareSage" is a made-up word that combines "ware" (from "warehouse") and "sage." In this context, "sage" conveys the idea of wisdom, knowledge, and expertise. So, "WareSage" implies a smart and knowledgeable system for warehouse management and control, which aligns with the concept of a smart warehouse system with IoT sensors and advanced technology.
+
+  ![WareSage](https://drive.google.com/file/d/1wZVdIhoop8VM2cKVPhYf3w2qyIknr9Od/view?usp=sharing)
+
+***WareSage:***
+
+  
+
+Represents a system for managing and optimizing warehouse operations.
+
+Implies wisdom, knowledge, and expertise in warehouse management.
+
+    
+
+***The Smart IoT:***
+
+  
+
+Signifies the incorporation of the Internet of Things (IoT) technology.
+
+Indicates the system's capability to collect real-time data from sensors for intelligent decision-making.
+
+
+***Logistics Nexus:***
+
+  
+
+Suggests that the system serves as a central hub or focal point for logistics operations.
+
+Highlights the system's role in connecting and coordinating various aspects of warehouse logistics.
+We want to measure temperature, pressure and luminosity from the sensors. 
 
 We want to measure temperature, pressure and luminosity from the sensors. 
 
@@ -78,7 +110,7 @@ Build and flash using the following command
 make IOTLAB_NODE=auto flash
 ```
 
-To see the results, go to the "My experiments" section on Iot-LAB.
+To see the results, go to the "My experiments" section on Iot-LAB. Open the terminal in the experiment section. Over there you will see the temperature, pressure and luminocity values. 
 You will get the following result:
 
 ![Image1](/Sensors/Sensor_Data.PNG)
