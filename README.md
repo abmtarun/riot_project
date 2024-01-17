@@ -43,11 +43,14 @@ WareSage integrates three types of sensors to enable intelligent management:
 -   _Temperature Sensors_: These sensors provide real-time temperature data, allowing for precise climate control within the warehouse. Automated adjustments to heating, ventilation, and air conditioning (HVAC) systems ensure optimal conditions for stored goods.
 -   _Pressure Sensors_: Utilized for asset tracking and security, pressure sensors monitor goods' condition during transportation. Real-time tracking and security enhancements are achieved through this sensor.
 -   _Luminosity Sensors_: Luminosity sensors are employed for efficient lighting control and security enhancement. The system automates lighting based on natural light levels and detects unusual lighting conditions that may indicate unauthorized access.
+<<<<<<< HEAD
 
 
 The whole setup is done by 'RIOT OS' on 'IoT-LAB'
 
 IOT_LAB M3 board contains all these sensors. 
+=======
+>>>>>>> 94cf616801141ee992b4c548f3841b6701ff24b2
 
 Sensors:  
 1. Temperature Sensor (LPS331AP): It measures temperature in Celcius
