@@ -38,7 +38,7 @@ Sensors:
 2.  Pressure Sensor (LPS331AP): It measures atmospheric pressure in hPa.
 3.  Luminosity (Light) Sensor (ISL29020): It measures ambient light intensity in lux.
 
-## Real-world Testing and Remote Monitorin ##
+## Real-world Testing and Remote Monitoring ##
 
 - RIOT OS applications have been developed to run on our chosen IoT devices for real-time sensor data collection.
 - FIT IoT-Lab's real-world testing capabilities have allowed us to deploy these devices within our warehouse, collecting invaluable    data under actual operating conditions.
@@ -207,8 +207,7 @@ Now you can see the temperature properly. That means, the two servers are commun
 
 ## Conclusion ##
 
-In conclusion, WareSage is a game-changing solution for warehouse management. It leverages IoT sensors, Docker containerization, and Kubernetes orchestration to create a smart warehouse system that optimizes operations, enhances security, and ensures the safety and security of valuable goods during transportation and storage. WareSage represents a significant step toward modernizing and optimizing warehouse logistics.
-The integration of RIOT OS and FIT IoT-Lab with WareSage signifies our commitment to staying at the forefront of warehouse management technology. This integration empowers us to harness real-time IoT data, conduct real-world testing, and optimize our warehouse operations with greater precision and efficiency. It is a testament to our dedication to continuously improve our capabilities and provide top-tier solutions for our clients.
+In conclusion,The integration of RIOT OS and FIT IoT-Lab with WareSage signifies our commitment to staying at the forefront of warehouse management technology. This integration empowers us to harness real-time IoT data, conduct real-world testing, and optimize our warehouse operations with greater precision and efficiency. It is a testament to our dedication to continuously improve our capabilities and provide top-tier solutions for our clients.
 
 
 ## Demonstration video ##
