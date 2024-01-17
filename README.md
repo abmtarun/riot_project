@@ -189,12 +189,16 @@ ping <IPV6 Address>
 
 To check wheather the client is properly working or not type the following command to retrieve  the temperature values from the sensor.
 ```
-coap get <ipv6> : 5683 /temperature
+coap get <ipv6>  5683 /temperature
 ```
 Remember to replace ```<ipv6>``` by the IP V6 adress of the server.
 
 
-Now you can see the temperature properly. That means, the two servers are communicating properly. 
+Now you can see the temperature properly.
+
+![Image4](/Coap/Coap-3.PNG)
+
+ That means, the two servers are communicating properly. 
 
 
 ## Benefits
@@ -207,7 +211,7 @@ Now you can see the temperature properly. That means, the two servers are commun
 
 ## Conclusion ##
 
-In conclusion,The integration of RIOT OS and FIT IoT-Lab with WareSage signifies our commitment to staying at the forefront of warehouse management technology. This integration empowers us to harness real-time IoT data, conduct real-world testing, and optimize our warehouse operations with greater precision and efficiency. It is a testament to our dedication to continuously improve our capabilities and provide top-tier solutions for our clients.
+In conclusion,The integration of RIOT OS and FIT IoT-Lab with WareSage signifies our commitment to staying at the forefront of warehouse management technology. This integration empowers us to harness real-time IoT data, conduct real-world testing, and optimize our warehouse operations with greater precision and efficiency. It is a testament to our dedication to continuously improve our capabilities and provide top-tier solutions for future.
 
 
 ## Demonstration video ##
