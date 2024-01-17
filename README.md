@@ -1,13 +1,14 @@
 # IoT_Mini_Project_1 
  **Group-5: Md Mia, Md Esti, Abdullah Chaudhry**
- **"WareSage: The Smart IoT Logistics Nexus"**
+
+**"WareSage: The Smart IoT Logistics Nexus"**
 
 Github: https://github.com/abmtarun/riot_project.git
 
 ##  Introduction ##
 "WareSage" is a made-up word that combines "ware" (from "warehouse") and "sage." In this context, "sage" conveys the idea of wisdom, knowledge, and expertise. So, "WareSage" implies a smart and knowledgeable system for warehouse management and control, which aligns with the concept of a smart warehouse system with IoT sensors and advanced technology.
 
-  ![WareSage](https://drive.google.com/file/d/1wZVdIhoop8VM2cKVPhYf3w2qyIknr9Od/view?usp=sharing)
+
 
 ***WareSage:***
 
@@ -37,16 +38,23 @@ Suggests that the system serves as a central hub or focal point for logistics op
 Highlights the system's role in connecting and coordinating various aspects of warehouse logistics.
 We want to measure temperature, pressure and luminosity from the sensors. 
 
-We want to measure temperature, pressure and luminosity from the sensors. 
+##  Sensors for Smart Management ##
+WareSage integrates three types of sensors to enable intelligent management:
+-   _Temperature Sensors_: These sensors provide real-time temperature data, allowing for precise climate control within the warehouse. Automated adjustments to heating, ventilation, and air conditioning (HVAC) systems ensure optimal conditions for stored goods.
+-   _Pressure Sensors_: Utilized for asset tracking and security, pressure sensors monitor goods' condition during transportation. Real-time tracking and security enhancements are achieved through this sensor.
+-   _Luminosity Sensors_: Luminosity sensors are employed for efficient lighting control and security enhancement. The system automates lighting based on natural light levels and detects unusual lighting conditions that may indicate unauthorized access.
+
+
+The whole setup is done by 'RIOT OS' on 'IoT-LAB'
+
+IOT_LAB M3 board contains all these sensors. 
 
 Sensors:  
 1. Temperature Sensor (LPS331AP): It measures temperature in Celcius
 2.  Pressure Sensor (LPS331AP): It measures atmospheric pressure in hPa.
 3.  Luminosity (Light) Sensor (ISL29020): It measures ambient light intensity in lux.
 
-IOT_LAB M3 board contains all these sensors. 
 
-The whole setup is done by 'RIOT OS' on 'IoT-LAB'
 ## Setup ##
 To be able to connect to an IoT-LAB site server, you have to add your SSH key to your user account.
  1.  Generate a pair of SSH keys from the VS Code Terminal:
