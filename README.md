@@ -216,4 +216,4 @@ In conclusion,The integration of RIOT OS and FIT IoT-Lab with WareSage signifies
 
 ## Demonstration video ##
 
-[Demonstration video]
+https://youtu.be/fSswz56AZe8
