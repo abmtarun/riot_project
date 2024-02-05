@@ -45,6 +45,8 @@ Sensors:
 - We have seamlessly integrated FIT IoT-Lab's remote access features with our WareSage system, enabling remote monitoring and control of our IoT devices.
 
 ## Setup ##
+
+
 To be able to connect to an IoT-LAB site server, you have to add your SSH key to your user account.
  1.  Generate a pair of SSH keys from the VS Code Terminal:
 ```
@@ -54,6 +56,7 @@ rm -f ~/.ssh/id_rsa* && ssh-keygen -q -N "" -C iot-lab-training -f ~/.ssh/id_rsa
 ```
 iotlab-auth --add-ssh-key
 ```
+
  3.  Copy the output of the previous command and add it as authorized SSH key for your account:  
     [https://www.iot-lab.info/testbed/account](https://www.iot-lab.info/testbed/account)  (SSH Keys tab)
     
@@ -63,10 +66,13 @@ iotlab-auth --add-ssh-key
 ```
 ssh $IOTLAB_LOGIN@lyon.iot-lab.info
 ```    
-
+5. Clone the RIOT OS repository:
+```
+git clone https://github.com/RIOT-OS/RIOT.git
+```
     
 ## Experiment: Sensors ##
-To run the application the most important thing is to follow the path. For this application, the path is like this. If you change the path remember to fix this. 
+To run the application the most important thing is to follow the path. For this application, the path in the Makefile is like this. If you change the path remember to fix this. 
 
 RIOTBASE ?= $(CURDIR)/../../RIOT
 
@@ -80,7 +86,7 @@ env SITE=grenoble
 ```
 Submit an experiment using the following command:
 ```
-iotlab-experiment submit -n "iot_sensors_data" -d 20 -l 1,archi=m3:at86rf231+site=grenoble
+iotlab-experiment submit -n "iot_sensors_data" -d 20 -l 1,archi=m3:at86rf231+site=$SITE
 ```
 Here the experiment will last 20 minutes. It can be modified. Similarly, the site can be changed by modifying the value of the SITE variable in the command. 
 
@@ -155,7 +161,7 @@ iotlab-experiment --jmespath="items[*].network_address | sort(@)" get --nodes
 
 You can see the Output
 
-![Image2](/Coap/Coap-1.PNG)
+![Image2](/Coap/Coap-1.PNG)-
 ![Image3](/Coap/coap-2.PNG)
 
 In the first terminal, which we will now call the coap server, you can type the following command: 
@@ -200,7 +206,74 @@ Now you can see the temperature properly.
 
  That means, the two servers are communicating properly. 
 
+##  Cloud Setup
 
+1. Create EC2 instance 
+
+2. Assign IPv6 subnet: 
+https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-ipv6-only-subnets-and-ec2-instances/
+
+3. Connect to EC2 instance using SSH
+
+4. Setup Docker
+```
+sudo snap install docker
+```
+
+5. Setup Influxdb:
+```
+docker run --detach --name influxdb -p 8086:8086 influxdb:2.2.0
+```
+
+6. Enable the following ports to be open in security setting of EC2:
+```
+8086 influxdb
+```
+
+7. Go to InfluxDB
+```
+<EC2-public-IPv4-Address>:8086
+```
+
+8. Setup the organization and create a bucket
+
+9. Create a Dockerfile to setup docker image
+```
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed dependencies specified in requirements.txt
+RUN pip install --no-cache-dir requirements.txt
+
+# Run your Python script when the container launches
+CMD ["python", "main.py"]
+```
+
+10. The requirements.txt file should have the following
+```
+aiocoap==0.4
+influxdb==5.3.1
+```
+
+11. Build Docker image
+```
+docker build -t python-app .
+```
+
+12. Run the docker container
+```
+docker run python-app
+```
+
+ 13. The python file will connect to the COAP network and read the data, then save it to influxdb
+
+   
 ## Benefits
 
 -   *Enhanced Security*: WareSage's sensor-driven security measures protect valuable assets.
